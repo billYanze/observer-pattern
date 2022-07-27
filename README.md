@@ -12,9 +12,13 @@ How to fix: Using object-oriented techniques, this dependency can be weakened.
 
 Key code: There is an ArrayList in the abstract class to store the observers.
 
-Application examples: 1. During the auction, the auctioneer observes the highest bid, and then notifies other bidders to bid. 2. In Journey to the West, Wukong asked the Bodhisattva to surrender the red boy. The Bodhisattva sprinkled water on the ground and attracted an old tortoise. This tortoise was the observer.
+### Application examples: 
+* 1. During the auction, the auctioneer observes the highest bid, and then notifies other bidders to bid. 、
+* 2. In Journey to the West, Wukong asked the Bodhisattva to surrender the red boy. The Bodhisattva sprinkled water on the ground and attracted an old tortoise. This tortoise was the observer.
 
-Advantages: 1. The observer and the observed are abstractly coupled. 2. Establish a trigger mechanism.
+Advantages: 
+* 1. The observer and the observed are abstractly coupled. 
+* 2. Establish a trigger mechanism.
 
 Disadvantages: 1. If an observed object has many direct and indirect observers, it will take a lot of time to notify all observers. 2. If there is a circular dependency between the observer and the observation target, the observation target will trigger a cyclic call between them, which may cause the system to crash. 3. The observer mode has no corresponding mechanism to let the observer know how the observed target object has changed, but only know that the observed target has changed.
 
